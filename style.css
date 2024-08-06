@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 200px;
+    
+}
+.container div{
+    width: 15px;
+    height: 15px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    animation-name: anima;
+    animation-duration: 1.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.anima{
+    animation-delay: .6s;
+}
+
+.anima1{
+    animation-delay: 1s;
+}
+
+.anima2{
+    animation-delay: 1.4s;
+}
+
+
+.anima3{
+    animation-delay: 1.8s;
+
+}
+
+.anima4
+{
+    animation-delay: 2.2s;
+}
+
+
+@keyframes anima{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        transform: scale(2.2);
+        background-color: blue;
+    }
+}
